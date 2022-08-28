@@ -6,6 +6,7 @@ import Feature1 from "../components/Feature1";
 import Feature2 from "../components/Feature2";
 import Video from "../components/Video";
 import Collectibles from "../components/Collectibles";
+import Faq from "../components/Faq";
 
 export const themeChange = () => {
   const GetElement = document.getElementById("mainWrapper");
@@ -28,6 +29,7 @@ export default function Home() {
         <Feature2 />
         <Video />
         <Collectibles />
+        <Faq />
       </div>
     </div>
   );

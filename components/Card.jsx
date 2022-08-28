@@ -4,7 +4,7 @@ import React from "react";
 const Card = ({ data }) => {
   const { img, desc, name, title } = data;
   return (
-    <div className="mb-6 md:mb-0 max-w-[450px] p-10 bg-gray-800 rounded-2xl">
+    <div className="mb-6 md:mb-0 max-w-[450px] p-10 bg-gray-100 dark:bg-gray-800 rounded-2xl">
       <p className="text-2xl mb-12">{desc}</p>
       <div className="flex gap-4">
         <Image
