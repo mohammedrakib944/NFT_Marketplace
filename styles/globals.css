@@ -21,6 +21,9 @@
   h2 {
     @apply text-3xl sm:text-4xl;
   }
+  h3 {
+    @apply text-xl sm:text-2xl font-semibold;
+  }
   li {
     @apply cursor-pointer;
   }
@@ -28,9 +31,15 @@
 
 @layer components {
   .c-button {
-    @apply px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5 hover:bg-indigo-700 duration-300;
+    @apply px-6 py-2 text-white bg-indigo-600 rounded-md hover:bg-indigo-700 duration-300;
   }
   .wrapper {
-    @apply container mx-auto;
+    @apply container mx-auto px-6 2xl:px-16;
+  }
+  .text-2 {
+    @apply text-xl text-gray-700 dark:text-gray-400;
+  }
+  .spd {
+    @apply p-1 rounded-lg bg-indigo-500/30 mx-2;
   }
 }

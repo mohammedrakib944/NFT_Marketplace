@@ -34,19 +34,17 @@ const Navbar = () => {
           : "fixed w-full h-[90px] duration-300 z-[100] dark:bg-gray-900"
       }
     >
-      <div className="container mx-auto flex w-full h-full justify-between items-center px-2 2xl:px-16">
+      <div className="container mx-auto flex w-full h-full justify-between items-center px-6 2xl:px-16">
         <Link
           href="/"
-          className="hidden md:flex items-center justify-center gap-3 -mt-2"
+          className="hidden md:flex items-center justify-center gap-3  "
         >
           <a>
-            <span className="font-bold text-2xl dark:text-gray-200 mt-2">
-              Logo
-            </span>
+            <span className="font-bold text-2xl dark:text-gray-200 ">Logo</span>
           </a>
         </Link>
         <div className="flex items-center justify-center">
-          <ul className="hidden md:flex md:gap-x-3 lg:gap-x-8 mt-5">
+          <ul className="hidden md:flex md:gap-x-3 lg:gap-x-8 mt-3">
             {NavUrls.map((data) => (
               <Link href={data.url} key={data.id}>
                 <li className="c-link ml-0 mb-6 w-fit text-gray-700 dark:text-gray-200 text-lg pt-2 hover:border-b border-gray-700 dark:hover:text-indigo-400 hover:text-indigo-600 duration-300">
@@ -55,6 +53,12 @@ const Navbar = () => {
               </Link>
             ))}
           </ul>
+          <button
+            onClick={handleTheme}
+            className="block md:hidden text-gray-700 dark:text-gray-200 pr-6"
+          >
+            {theme ? <BsFillSunFill /> : <BsFillMoonStarsFill />}
+          </button>
           <div
             onClick={handleNav}
             className="md:hidden text-black dark:text-white cursor-pointer"
@@ -65,7 +69,7 @@ const Navbar = () => {
         <div className="hidden md:block">
           <Link href="#">
             <a>
-              <button className="py-2 px-6 mt-2 c-button text-white rounded-lg">
+              <button className="py-2 px-6  c-button text-white rounded-lg">
                 Get Started
               </button>
               <button
@@ -96,7 +100,7 @@ const Navbar = () => {
             <div className="flex w-full items-center justify-between">
               <Link
                 href="/#"
-                className="flex items-center justify-center gap-3 -mt-2"
+                className="flex items-center justify-center gap-3  "
               >
                 <span className="font-bold text-2xl dark:text-gray-200">
                   Logo
@@ -121,7 +125,7 @@ const Navbar = () => {
               ))}
               <li>
                 <Link href="#">
-                  <button className="py-2 px-6 mt-2 c-button text-white rounded-lg">
+                  <button className="py-2 px-6  c-button text-white rounded-lg">
                     Get Started
                   </button>
                 </Link>
