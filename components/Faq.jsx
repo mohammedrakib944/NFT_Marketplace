@@ -1,5 +1,6 @@
 import React from "react";
 import Dropdown from "./Dropdown";
+import { FAQ } from "./Data.jsx";
 
 const Faq = () => {
   return (
@@ -18,9 +19,12 @@ const Faq = () => {
         </p>
       </div>
 
-      <div>
-        <Dropdown />
+      <div className="mt-16 max-w-[600px] mx-auto">
+        {FAQ.map((data) => (
+          <Dropdown key={data.id} data={data} />
+        ))}
       </div>
+      <div className="h-[100px]"></div>
     </div>
   );
 };

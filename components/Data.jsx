@@ -100,3 +100,26 @@ export const FData2 = [
     disc: "Stake, or lock up, your CBT to help process transactions and further secure the platform–providing security guarantees well-above the 51% standard. You probably have the hardware required to join the platform.",
   },
 ];
+
+export const FAQ = [
+  {
+    id: 1,
+    question: "Carbon footprint?",
+    ans: "Yes, Offset carbon footprints for Polygon, and buy extra credits to become carbon negative.",
+  },
+  {
+    id: 2,
+    question: "Donations",
+    ans: "Make donations easy for NGOs that fight climate change.",
+  },
+  {
+    id: 3,
+    question: "Resources?",
+    ans: "Provide resources for ecosystem partners who want to offset their carbon footprint.",
+  },
+  {
+    id: 4,
+    question: "Do you offer technical support?",
+    ans: "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+  },
+];
