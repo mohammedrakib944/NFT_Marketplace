@@ -3,6 +3,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
 import { NavUrls } from "./Navlinks";
+import Link from "next/link";
 import { themeChange } from "../pages";
 
 const Navbar = () => {
@@ -34,7 +35,7 @@ const Navbar = () => {
       }
     >
       <div className="container mx-auto flex w-full h-full justify-between items-center px-2 2xl:px-16">
-        <a
+        <Link
           href="/#"
           className="hidden md:flex items-center justify-center gap-3 -mt-2"
         >
@@ -42,15 +43,15 @@ const Navbar = () => {
           <span className="font-bold text-2xl dark:text-gray-200 mt-2">
             Logo
           </span>
-        </a>
+        </Link>
         <div className="flex items-center justify-center">
           <ul className="hidden md:flex md:gap-x-3 lg:gap-x-8 mt-5">
             {NavUrls.map((data) => (
-              <a href={data.url} key={data.id}>
+              <Link href={data.url} key={data.id}>
                 <li className="c-link ml-0 mb-6 w-fit text-gray-700 dark:text-gray-200 text-lg pt-2 hover:border-b border-gray-700 dark:hover:text-indigo-400 hover:text-indigo-600 duration-300">
                   {data.title}
                 </li>
-              </a>
+              </Link>
             ))}
           </ul>
           <div
@@ -61,7 +62,7 @@ const Navbar = () => {
           </div>
         </div>
         <div>
-          <a href="#">
+          <Link href="#">
             <button className="py-2 px-6 mt-2 c-button text-white rounded-lg">
               Get Started
             </button>
@@ -71,7 +72,7 @@ const Navbar = () => {
             >
               {theme ? <BsFillSunFill /> : <BsFillMoonStarsFill />}
             </button>
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -90,14 +91,14 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <a
+              <Link
                 href="/#"
                 className="flex items-center justify-center gap-3 -mt-2"
               >
                 <span className="font-bold text-2xl dark:text-gray-200">
                   Logo
                 </span>
-              </a>
+              </Link>
               <div onClick={handleNav} className="c-button">
                 <AiOutlineClose />
               </div>
@@ -109,18 +110,18 @@ const Navbar = () => {
           <div className="h-[70%] py-4 flex flex-col justify-between">
             <ul>
               {NavUrls.map((data) => (
-                <a href={data.url} key={data.id}>
+                <Link href={data.url} key={data.id}>
                   <li className="c-link ml-0 mb-6 w-fit text-gray-700 dark:text-gray-200 hover:border-b hover:text-indigo-500 duration-300">
                     {data.title}
                   </li>
-                </a>
+                </Link>
               ))}
               <li>
-                <a href="#">
+                <Link href="#">
                   <button className="py-2 px-6 mt-2 c-button text-white rounded-lg">
                     Get Started
                   </button>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
