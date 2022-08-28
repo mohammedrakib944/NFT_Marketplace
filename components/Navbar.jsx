@@ -36,13 +36,14 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex w-full h-full justify-between items-center px-2 2xl:px-16">
         <Link
-          href="/#"
+          href="/"
           className="hidden md:flex items-center justify-center gap-3 -mt-2"
         >
-          {/* <img src={logo} className="w-[45px] " alt="" /> */}
-          <span className="font-bold text-2xl dark:text-gray-200 mt-2">
-            Logo
-          </span>
+          <a>
+            <span className="font-bold text-2xl dark:text-gray-200 mt-2">
+              Logo
+            </span>
+          </a>
         </Link>
         <div className="flex items-center justify-center">
           <ul className="hidden md:flex md:gap-x-3 lg:gap-x-8 mt-5">
@@ -61,17 +62,19 @@ const Navbar = () => {
             <AiOutlineMenu size={25} />
           </div>
         </div>
-        <div>
+        <div className="hidden md:block">
           <Link href="#">
-            <button className="py-2 px-6 mt-2 c-button text-white rounded-lg">
-              Get Started
-            </button>
-            <button
-              onClick={handleTheme}
-              className="text-gray-700 dark:text-gray-200 pl-6 pr-2"
-            >
-              {theme ? <BsFillSunFill /> : <BsFillMoonStarsFill />}
-            </button>
+            <a>
+              <button className="py-2 px-6 mt-2 c-button text-white rounded-lg">
+                Get Started
+              </button>
+              <button
+                onClick={handleTheme}
+                className="text-gray-700 dark:text-gray-200 pl-6 pr-2"
+              >
+                {theme ? <BsFillSunFill /> : <BsFillMoonStarsFill />}
+              </button>
+            </a>
           </Link>
         </div>
       </div>
