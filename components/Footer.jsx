@@ -53,7 +53,7 @@ export default function Footer() {
               <a
                 href="https://twitter.com/web3templates"
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer"
               >
                 <span className="sr-only">Twitter</span>
                 <BsTwitter />
@@ -61,7 +61,7 @@ export default function Footer() {
               <a
                 href="https://facebook.com/web3templates"
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer"
               >
                 <span className="sr-only">Facebook</span>
                 <BsFacebook />
@@ -69,12 +69,12 @@ export default function Footer() {
               <a
                 href="https://instagram.com/web3templates"
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer"
               >
                 <span className="sr-only">Instagram</span>
                 <BsInstagram />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener">
+              <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
                 <span className="sr-only">Linkedin</span>
                 <BsLinkedin />
               </a>

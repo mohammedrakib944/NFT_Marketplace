@@ -35,7 +35,7 @@ const Hero = () => {
 
         <div>
           <div className="mt-4 md:mt-0">
-            <Image src={BG} />
+            <Image src={BG} alt="man" />
           </div>
         </div>
       </div>

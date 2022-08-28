@@ -13,6 +13,7 @@ const Pareners = () => {
           <Image
             key={val.id}
             src={val.img}
+            alt="man"
             width="100px"
             height="100%"
             className="dark:invert"

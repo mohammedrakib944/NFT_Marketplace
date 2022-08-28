@@ -11,6 +11,7 @@ const Card = ({ data }) => {
           src={img}
           width="50px"
           height="50px"
+          alt="Image"
           className="object-cover rounded-full"
         />
         <div className="">

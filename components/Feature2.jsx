@@ -22,7 +22,7 @@ const Feature2 = () => {
         </div>
 
         <div className="p-6 md:ml-6 w-[90%]">
-          <Image src={F1} />
+          <Image src={F1} alt="man" />
         </div>
       </div>
     </div>
